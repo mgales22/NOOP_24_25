@@ -14,4 +14,8 @@ public class UserSnd{
                 "name='" + name + '\'' +
                 '}';
     }
+
+    public String getName(){
+        return this.name;
+    }
 }

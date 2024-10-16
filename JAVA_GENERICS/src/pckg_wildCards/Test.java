@@ -15,8 +15,7 @@ public class Test {
         List<UserSnd> users = new ArrayList<>();
         users.add(new UserSnd("Marin"));
 
-        AnotherList anotherList = new AnotherList();
-        anotherList.addNewElement(new UserSnd("Eva"), users);
-        anotherList.listAllElements(users);
+        AUX_CLS anotherList = new AUX_CLS();
+
     }
 }
