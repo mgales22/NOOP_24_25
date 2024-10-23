@@ -2,8 +2,10 @@ package pckg_gui_calculator;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class ToolBar extends JPanel {
+public class ToolBar extends JPanel implements ActionListener {
 
     private JButton saveAsText;
     private JButton saveObjects;
@@ -35,6 +37,20 @@ public class ToolBar extends JPanel {
     }
 
     private void activateToolBar() {
+        saveAsText.addActionListener(this);
+        saveAsText.setActionCommand("saveAsText");
+        saveObjects.addActionListener(this);
+        saveObjects.setActionCommand("saveObjects");
+        loadObjects.addActionListener(this);
+        loadObjects.setActionCommand("loadObjects");
+        loadText.addActionListener(this);
+        loadText.setActionCommand("loadText");
+        clearAll.addActionListener(this);
+        clearAll.setActionCommand("clearAll");
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
 
     }
 }
