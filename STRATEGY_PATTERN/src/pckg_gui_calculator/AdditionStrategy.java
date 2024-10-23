@@ -5,4 +5,9 @@ public class AdditionStrategy implements CalculationStrategy{
     public double performCalculation(double fstNum, double sndNum) {
         return fstNum + sndNum;
     }
+
+    @Override
+    public String toString() {
+        return "AdditionStrategy";
+    }
 }

@@ -5,4 +5,9 @@ public class MultiplicationStrategy implements CalculationStrategy{
     public double performCalculation(double fstNum, double sndNum) {
         return fstNum * sndNum;
     }
+
+    @Override
+    public String toString() {
+        return "MultiplicationStrategy";
+    }
 }

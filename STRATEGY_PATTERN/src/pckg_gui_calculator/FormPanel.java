@@ -3,6 +3,8 @@ package pckg_gui_calculator;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class FormPanel extends JPanel {
 
@@ -12,6 +14,7 @@ public class FormPanel extends JPanel {
 
     private JComboBox<CalculationStrategy> operationBox;
     private JButton confirmButton;
+    private FormPanelListener formPanelListener;
 
     public FormPanel(){
         Dimension dims = getPreferredSize();
@@ -100,6 +103,33 @@ public class FormPanel extends JPanel {
 
     }
 
+    public void setFormPanelListener(FormPanelListener formPanelListener) {
+        this.formPanelListener = formPanelListener;
+    }
     private void activateFormPanel() {
+        confirmButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Test for button activation!");
+                double fstNum = Double.parseDouble(fstNumField.getText());
+                double sndNum = Double.parseDouble(sndNumField.getText());
+                CalculationStrategy calculationStrategy = (CalculationStrategy) operationBox.getSelectedItem();
+                double result = calculationStrategy.performCalculation(fstNum, sndNum);
+                resultField.setText(String.valueOf(result));
+                CalculationFormData calculationRecord = new CalculationFormData(fstNum, sndNum, result, calculationStrategy);
+                if(formPanelListener != null){
+                    formPanelListener.formPanelEventOccured(calculationRecord);
+                    resetForm();
+                }
+            }
+        });
+    }
+
+    private void resetForm(){
+        fstNumField.setText("");
+        sndNumField.setText("");
+        resultField.setEnabled(false);
+        fstNumField.requestFocus();
+        operationBox.setSelectedIndex(-1);
     }
 }
