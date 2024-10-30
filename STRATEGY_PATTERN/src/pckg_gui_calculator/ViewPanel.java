@@ -18,4 +18,12 @@ public class ViewPanel extends JPanel {
     public void addTextToViewPanel(CalculationFormData formRecord) {
         textArea.append(formRecord.toString());
     }
+
+    public void clearViewPanel() {
+        textArea.setText("");
+    }
+
+    public void addTextToViewPanel(String dataTxt){
+        textArea.append(dataTxt + "\n");
+    }
 }

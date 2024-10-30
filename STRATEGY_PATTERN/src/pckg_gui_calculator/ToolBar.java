@@ -12,11 +12,16 @@ public class ToolBar extends JPanel implements ActionListener {
     private JButton loadText;
     private JButton loadObjects;
     private JButton clearAll;
+    private ToolBarListener toolBarListener;
 
     public ToolBar(){
         initComps();
         layoutComps();
         activateToolBar();
+    }
+
+    public void setToolBarListener(ToolBarListener toolBarListener) {
+        this.toolBarListener = toolBarListener;
     }
 
     private void initComps() {
@@ -52,5 +57,30 @@ public class ToolBar extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
 
+        if(ae.getSource() == saveAsText){
+            System.out.println("Clicked: " + saveAsText.getActionCommand());
+            if(toolBarListener != null){
+                toolBarListener.toolBarEventOccured(saveAsText.getActionCommand());
+            }
+        }
+        if(ae.getSource() == saveObjects){
+            System.out.println("Clicked: " + saveObjects.getActionCommand());
+        }
+        if(ae.getSource() == loadObjects){
+            System.out.println("Clicked: " + loadObjects.getActionCommand());
+        }
+        if(ae.getSource() == loadText){
+            System.out.println("Clicked: " + loadText.getActionCommand());
+            if(toolBarListener != null){
+                toolBarListener.toolBarEventOccured(loadText.getActionCommand());
+            }
+        if(ae.getSource() == clearAll){
+            System.out.println("Clicked: " + clearAll.getActionCommand());
+            if(toolBarListener != null){
+                toolBarListener.toolBarEventOccured(clearAll.getActionCommand());
+            }
+        }
     }
 }
+}
+
