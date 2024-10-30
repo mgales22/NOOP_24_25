@@ -1,0 +1,8 @@
+Potrebno je napraviti sljedeće:
+
+1. Realizirati strategiju za spremanje objekata klase CalculationFormData.
+2. Realizirati strategiju za čitanje tih objekata iz bin datoteke.
+3. "Hard coded" filePath zamijeniti s JFileChooser-om -> default folder "DATA" unutar glavnog modula (NOOP_24_25 modula).
+4. Čitanje podataka iz datoteke riješiti na način da se prvo trenutni podaci, ako ih ima spreme u neku datoteku, tek se onda može loadati nova datoteka.
+5. Osigurati provjere unosa na formu - s pripadnim porukama (JOptionPane).
+6. Ispravno primjeniti upravljanje iznimkama.
