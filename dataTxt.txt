@@ -1,0 +1,2 @@
+CalculationFormData{fst=4.0, snd=4.0, result=8.0, calculationStrategy=AdditionStrategy}
+CalculationFormData{fst=2.0, snd=2.0, result=0.0, calculationStrategy=SubtractionStrategy}
