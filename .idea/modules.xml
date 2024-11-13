@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/ADAPTER/ADAPTER.iml" filepath="$PROJECT_DIR$/ADAPTER/ADAPTER.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA_GENERICS/JAVA_GENERICS.iml" filepath="$PROJECT_DIR$/JAVA_GENERICS/JAVA_GENERICS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/NOOP_24_25.iml" filepath="$PROJECT_DIR$/.idea/NOOP_24_25.iml" />
-      <module fileurl="file://$PROJECT_DIR$/STRATEGY_PATTERN/STRATEGY_PATTERN.iml" filepath="$PROJECT_DIR$/STRATEGY_PATTERN/STRATEGY_PATTERN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OBSERVER/OBSERVER.iml" filepath="$PROJECT_DIR$/OBSERVER/OBSERVER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/STRATEGY_PATTERN/STRATEGY.iml" filepath="$PROJECT_DIR$/STRATEGY_PATTERN/STRATEGY.iml" />
     </modules>
   </component>
 </project>
