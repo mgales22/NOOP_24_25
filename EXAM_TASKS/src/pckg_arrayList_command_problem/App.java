@@ -40,4 +40,15 @@ public class App {
         arrayListController.setCommand(clearAllElements);
         arrayListController.runCommand();
     }
+
+    private static <E> void listElements(ArrayList<E> list){
+        if(list.isEmpty()){
+            System.out.println("List is empty. Nothing to list!");
+        }else{
+            System.out.println("\n========================List elements:========================");
+            for (E element : list) {
+                System.out.println(element);
+            }
+        }
+    }
 }
