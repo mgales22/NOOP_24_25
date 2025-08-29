@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/EXAM_TASKS/EXAM_TASKS.iml" filepath="$PROJECT_DIR$/EXAM_TASKS/EXAM_TASKS.iml" />
       <module fileurl="file://$PROJECT_DIR$/FACTORY/FACTORY.iml" filepath="$PROJECT_DIR$/FACTORY/FACTORY.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA_GENERICS/JAVA_GENERICS.iml" filepath="$PROJECT_DIR$/JAVA_GENERICS/JAVA_GENERICS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MVC/MVC.iml" filepath="$PROJECT_DIR$/MVC/MVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/NOOP_24_25.iml" filepath="$PROJECT_DIR$/.idea/NOOP_24_25.iml" />
       <module fileurl="file://$PROJECT_DIR$/OBSERVER/OBSERVER.iml" filepath="$PROJECT_DIR$/OBSERVER/OBSERVER.iml" />
       <module fileurl="file://$PROJECT_DIR$/SOLID/SOLID.iml" filepath="$PROJECT_DIR$/SOLID/SOLID.iml" />
